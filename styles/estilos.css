@@ -22,11 +22,11 @@ body {
     font-family: var(--font-family-Fraunces);
 }
 
-main {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .card {
@@ -116,6 +116,33 @@ main {
     font-weight: 700;
 }
 
+.attribution {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: var(--font-size-paragraph);
+    color: var(--color-neutral-dark-grayish-blue);
+    font-weight: 500;
+    font-family: var(--font-family-Montserrat);
+    margin-bottom: 1rem;
+}
+
+.attribution a {
+    color: var(--color-primary-dark-cyan);
+    text-decoration: none;
+}
+
 .card__button:hover {
     background-color: var(--color-neutral-very-dark-blue);
+}
+
+@media screen and (max-width: 426px) {
+    .card{
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 1rem;
+    }
+
+    .card__image-container, .card__content {
+        width: 100%;
+    }
 }
