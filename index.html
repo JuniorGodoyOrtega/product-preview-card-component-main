@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Preview Card Component</title>
-    <link rel="icon" href="img/favicon-32x32.png" type="image/png" sizes="32x32">
-    <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" href="styles/estilos.css" />
 </head>
 <body>
-    <h1>Product Preview Card Component</h1>
+    <main class="container">
+        <article class="card">
+            <picture class="card__image-container">
+                <source media="(max-width: 426px)" srcset="img\image-product-mobile.jpg" />
+                <img src="img/image-product-desktop.jpg" alt="Gabrielle Essence Eau de Parfum bottle"
+                    class="card__image" />
+            </picture>
+            <p class="card__label">Perfume</p>
+            <h1 class="card__title">Gabrielle Essence Eau De Parfum</h1>
+            <p class="card__description">
+                A floral, solar and voluptuous interpretation composed by Olivier
+                Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+            <p class="card__price">
+                <span class="card__price-now">$149.99</span>
+                <span class="card__price-before">$169.99</span>
+            </p>
+            <button class="card__button">
+                <img src="img/icon-cart.svg" alt="" aria-hidden="true" class="card__button-icon" />
+                Add to Cart
+            </button>
+        </article>
+    </main>
 
     <footer class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/JuniorGodoyOrtega">Junior Silverio Godoy Ortega</a>.
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend
+            Mentor</a>. Coded by
+        <a href="https://github.com/JuniorGodoyOrtega" target="_blank" rel="noopener noreferrer">Junior Silverio Godoy
+            Ortega</a>.
     </footer>
 </body>
 </html>
