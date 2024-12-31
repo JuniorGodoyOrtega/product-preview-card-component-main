@@ -48,7 +48,6 @@ body {
 }
 
 .card__content {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -132,6 +131,7 @@ body {
 }
 
 .card__button:hover {
+    transition: background-color .5s;
     background-color: var(--color-neutral-very-dark-blue);
 }
 
