@@ -4,11 +4,11 @@
     --font-family-Montserrat: 'Montserrat', sans-serif;
     --font-family-Fraunces: 'Fraunces', serif;
     --font-size-paragraph: 14px;
-    --color-primary-dark-cyan: #004b8d;
-    --color-primary-cream: #f2f2f2;
-    --color-neutral-very-dark-blue: #001e3c;
-    --color-neutral-dark-grayish-blue: #2c3e50;
-    --color-neutral-white: #ffffff;
+    --color-primary-dark-cyan: hsl(158, 36%, 37%);
+    --color-primary-cream: hsl(30, 38%, 92%);
+    --color-neutral-very-dark-blue: hsl(212, 21%, 14%);
+    --color-neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+    --color-neutral-white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -19,4 +19,98 @@
 
 body {
     background-color: var(--color-primary-cream);
+    font-family: var(--font-family-Fraunces);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    background-color: var(--color-neutral-white);
+    max-width: 620px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__image-container, .card__content {
+    width: 50%;
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px;
+    gap: 25px;
+}
+
+.card__label {
+    font-family: var(--font-family-Montserrat);
+    color: var(--color-neutral-dark-grayish-blue);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+.card__title {
+    font-family: var(--font-family-Fraunces);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.card__description {
+    font-family: var(--font-family-Montserrat);
+    font-size: var(--font-size-paragraph);
+    color: var(--color-neutral-dark-grayish-blue);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.card__price {
+    display: flex;
+    align-items: center;
+}
+
+.card__price-now{
+    color: var(--color-primary-dark-cyan);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card__price-before {
+    font-family: var(--font-family-Montserrat);
+    color: var(--color-neutral-dark-grayish-blue);
+    font-size: var(--font-size-paragraph);
+    text-decoration: line-through;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+.card__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-dark-cyan);
+    color: var(--color-neutral-white);
+    font-family: var(--font-family-Montserrat);
+    font-size: var(--font-size-paragraph);
+    gap: 10px;
+    padding: 17px 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
 }
