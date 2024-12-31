@@ -112,5 +112,10 @@ main {
     padding: 17px 10px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
     font-weight: 700;
+}
+
+.card__button:hover {
+    background-color: var(--color-neutral-very-dark-blue);
 }
