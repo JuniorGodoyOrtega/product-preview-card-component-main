@@ -24,7 +24,7 @@ Este proyecto muestra una tarjeta de producto (o “preview card”) con su imag
 
 ## Cómo verlo
 1. Puedes ver el sitio en vivo en:  
-   **[Product Preview Card - GitHub Pages](https://TU-USUARIO.github.io/product-preview-card-component-main/)**  
+   **[Product Preview Card - GitHub Pages](https://juniorgodoyortega.github.io/product-preview-card-component-main/)**  
 2. O clonar este repositorio:
    ```bash
-   git clone https://github.com/TU-USUARIO/product-preview-card-component-main.git
+   git clone https://github.com/JuniorGodoyOrtega/product-preview-card-component-main
